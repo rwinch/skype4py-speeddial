@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+# ---------------------------------------------------------------------------------------------
+# This code is heavily based upon the sample found in the skype4py distrubiton. See
+# https://github.com/awahlig/skype4py/blob/master/examples/callfriend.py
+
 import time
 import re
 import sys
