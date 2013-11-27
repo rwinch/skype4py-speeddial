@@ -67,7 +67,7 @@ if not skype.Client.IsRunning:
 # Attatching to Skype..
 skype.Attach()
 
-number = re.search('(\d+)(,*)([\d#\*]*)', CmdLine)
+number = re.search('([+()-\d]+)(,)([\d()-#*]*)', CmdLine)
 Call = skype.PlaceCall(number.group(1))
 Call.WaitTime = len(number.group(2))
 Call.Extension = number.group(3)
